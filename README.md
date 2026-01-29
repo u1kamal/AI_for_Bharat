@@ -47,7 +47,7 @@ graph TD
     end
 
     subgraph Backend ["Service Layer (Node.js)"]
-        API[API Gateway] --> NLP[NLP Engine (IndicBERT)]
+        API[API Gateway] --> NLP["NLP Engine (IndicBERT)"]
         API --> SvcDisc[Service Discovery]
         SvcDisc --> SvcDB[(PostgreSQL)]
     end
